@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парковочные места в собственность | ЖК Полянка, Челябинск</title>
+    <meta name="description" content="Купите парковочное место в собственность в ЖК Полянка. Гарантированная парковка, рост стоимости квартиры, официальное оформление через Росреестр.">
+    <meta name="keywords" content="парковка, парковочное место, купить парковку, ЖК Полянка, Челябинск, недвижимость">
+    <link rel="canonical" href="https://polyanka12.ru">
+    <meta property="og:title" content="Парковочные места в собственность | ЖК Полянка">
+    <meta property="og:description" content="Гарантированная парковка у дома. Официальное оформление. Рост стоимости квартиры.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://polyanka12.ru">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --success: #16a34a;
+            --warning: #f59e0b;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #ffffff;
+            --bg-alt: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .header-phone {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .header-phone:hover {
+            color: var(--primary);
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 32px;
+        }
+
+        .hero-price {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 16px 32px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+        }
+
+        .hero-price .price {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .hero-price .price-note {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+
+        .badge svg {
+            width: 20px;
+            height: 20px;
+            fill: #4ade80;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #f59e0b;
+            color: #1f2937;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 16px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(245, 158, 11, 0.4);
+        }
+
+        /* Stats section */
+        .stats {
+            background: var(--bg-alt);
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-item .label {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Investment section */
+        .investment {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 48px;
+        }
+
+        .investment-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .investment-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--success);
+        }
+
+        .investment-text p {
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .growth-chart {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+
+        .growth-bar {
+            display: flex;
+            align-items: end;
+            gap: 16px;
+            height: 200px;
+            margin-bottom: 16px;
+        }
+
+        .bar {
+            flex: 1;
+            background: linear-gradient(to top, #16a34a, #4ade80);
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 12px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .bar.without {
+            height: 60%;
+            background: linear-gradient(to top, #9ca3af, #d1d5db);
+        }
+
+        .bar.with {
+            height: 100%;
+        }
+
+        .bar-labels {
+            display: flex;
+            gap: 16px;
+            text-align: center;
+        }
+
+        .bar-labels span {
+            flex: 1;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Benefits */
+        .benefits {
+            padding: 80px 0;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .benefit-card {
+            background: var(--bg-alt);
+            border-radius: 16px;
+            padding: 32px;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .benefit-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .benefit-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Parking Map */
+        .parking-map {
+            padding: 80px 0;
+            background: var(--bg-alt);
+        }
+
+        .map-container {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+
+        .map-legend {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .legend-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .legend-dot.available {
+            background: var(--success);
+        }
+
+        .legend-dot.sold {
+            background: #ef4444;
+        }
+
+        .legend-dot.reserved {
+            background: var(--warning);
+        }
+
+        .parking-grid {
+            display: grid;
+            gap: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .parking-row {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .parking-spot {
+            width: 60px;
+            height: 100px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .parking-spot:hover {
+            transform: scale(1.05);
+        }
+
+        .parking-spot.available {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+            color: white;
+        }
+
+        .parking-spot.sold {
+            background: #fecaca;
+            color: #991b1b;
+            cursor: default;
+        }
+
+        .parking-spot.reserved {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .parking-spot .spot-number {
+            font-size: 1.2rem;
+        }
+
+        .parking-spot .spot-price {
+            font-size: 0.7rem;
+            opacity: 0.9;
+        }
+
+        .parking-area-label {
+            text-align: center;
+            padding: 16px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px dashed var(--border);
+            margin-top: 16px;
+        }
+
+        /* How it works */
+        .how-it-works {
+            padding: 80px 0;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 auto 16px;
+        }
+
+        .step h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .step p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Documents */
+        .documents {
+            padding: 80px 0;
+            background: var(--bg-alt);
+        }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .doc-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid var(--border);
+        }
+
+        .doc-card h4 {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .doc-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .cadastral-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .cadastral-link:hover {
+            text-decoration: underline;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 80px 0;
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 24px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact .section-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 48px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.25rem;
+            margin-bottom: 24px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item svg {
+            width: 24px;
+            height: 24px;
+            fill: #4ade80;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 14px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: 2px solid var(--warning);
+        }
+
+        .submit-button {
+            width: 100%;
+            background: var(--warning);
+            color: var(--text);
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: #9ca3af;
+            padding: 32px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #9ca3af;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero-price .price {
+                font-size: 1.5rem;
+            }
+
+            .investment-content {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .parking-spot {
+                width: 45px;
+                height: 75px;
+            }
+
+            .parking-spot .spot-number {
+                font-size: 0.9rem;
+            }
+
+            .parking-spot .spot-price {
+                display: none;
+            }
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .modal-content h3 {
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .modal-content p {
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .modal-close {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">Полянка 12</a>
+            <a href="tel:+79227007667" class="header-phone">+7 922 700-76-67</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Парковочное место в собственность</h1>
+            <p class="hero-subtitle">ЖК Полянка, ул. Полянка 12, Челябинск</p>
+
+            <div class="hero-price">
+                <div class="price">от 350 000 руб.</div>
+                <div class="price-note">Официальное оформление через Росреестр</div>
+            </div>
+
+            <div class="hero-badges">
+                <span class="badge">
+                    <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                    Свидетельство Росреестра
+                </span>
+                <span class="badge">
+                    <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                    Можно продать или сдать
+                </span>
+                <span class="badge">
+                    <svg viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+                    Повышает стоимость квартиры
+                </span>
+            </div>
+
+            <a href="#parking-map" class="cta-button">Выбрать место</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="number">20</div>
+                    <div class="label">парковочных мест</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">8</div>
+                    <div class="label">свободно сейчас</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">+15%</div>
+                    <div class="label">к стоимости квартиры</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">24/7</div>
+                    <div class="label">ваше личное место</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="investment">
+        <div class="container">
+            <h2 class="section-title">Инвестиция в вашу недвижимость</h2>
+            <p class="section-subtitle">Парковочное место увеличивает рыночную стоимость квартиры</p>
+
+            <div class="investment-content">
+                <div class="investment-text">
+                    <h3>+10-15% к стоимости квартиры</h3>
+                    <p>По данным риелторов Челябинска, квартиры с собственным парковочным местом продаются на 10-15% дороже аналогичных без парковки.</p>
+                    <p>При средней стоимости квартиры в ЖК Полянка 4-5 млн рублей, это дополнительные 400-750 тыс. рублей к цене при продаже.</p>
+                    <p><strong>Парковка окупает себя при первой же продаже квартиры.</strong></p>
+                </div>
+
+                <div class="growth-chart">
+                    <div class="growth-bar">
+                        <div class="bar without">4 млн</div>
+                        <div class="bar with">4.6 млн</div>
+                    </div>
+                    <div class="bar-labels">
+                        <span>Квартира без парковки</span>
+                        <span>Квартира с парковкой</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему стоит купить</h2>
+            <p class="section-subtitle">Преимущества собственного парковочного места</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <h3>Гарантированное место</h3>
+                    <p>Больше никаких поисков парковки после работы. Ваше место всегда свободно и ждет вас.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                    </div>
+                    <h3>Инвестиция</h3>
+                    <p>Парковочное место можно продать или сдать в аренду. Ликвидный актив, который растет в цене.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                    </div>
+                    <h3>Безопасность</h3>
+                    <p>Закрытый двор, видеонаблюдение, ограниченный доступ. Ваш автомобиль под защитой.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+                    </div>
+                    <h3>Официальное оформление</h3>
+                    <p>Свидетельство о праве собственности из Росреестра. Полностью легальная сделка.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parking-map" id="parking-map">
+        <div class="container">
+            <h2 class="section-title">Выберите парковочное место</h2>
+            <p class="section-subtitle">Нажмите на свободное место для бронирования</p>
+
+            <div class="map-container">
+                <div class="map-legend">
+                    <div class="legend-item">
+                        <div class="legend-dot available"></div>
+                        <span>Свободно</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-dot reserved"></div>
+                        <span>Забронировано</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-dot sold"></div>
+                        <span>Продано</span>
+                    </div>
+                </div>
+
+                <div class="parking-grid">
+                    <!-- Row 1 - у входа -->
+                    <div class="parking-row">
+                        <div class="parking-spot sold" data-spot="1">
+                            <span class="spot-number">1</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot sold" data-spot="2">
+                            <span class="spot-number">2</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot available" data-spot="3" data-price="380000">
+                            <span class="spot-number">3</span>
+                            <span class="spot-price">380 т.р.</span>
+                        </div>
+                        <div class="parking-spot available" data-spot="4" data-price="380000">
+                            <span class="spot-number">4</span>
+                            <span class="spot-price">380 т.р.</span>
+                        </div>
+                        <div class="parking-spot reserved" data-spot="5">
+                            <span class="spot-number">5</span>
+                            <span class="spot-price">бронь</span>
+                        </div>
+                    </div>
+
+                    <div class="parking-area-label">Парковка у входа (5 мест)</div>
+
+                    <!-- Row 2 - большая парковка -->
+                    <div class="parking-row">
+                        <div class="parking-spot sold" data-spot="6">
+                            <span class="spot-number">6</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot sold" data-spot="7">
+                            <span class="spot-number">7</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot sold" data-spot="8">
+                            <span class="spot-number">8</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot available" data-spot="9" data-price="350000">
+                            <span class="spot-number">9</span>
+                            <span class="spot-price">350 т.р.</span>
+                        </div>
+                        <div class="parking-spot available" data-spot="10" data-price="350000">
+                            <span class="spot-number">10</span>
+                            <span class="spot-price">350 т.р.</span>
+                        </div>
+                    </div>
+
+                    <div class="parking-row">
+                        <div class="parking-spot available" data-spot="11" data-price="350000">
+                            <span class="spot-number">11</span>
+                            <span class="spot-price">350 т.р.</span>
+                        </div>
+                        <div class="parking-spot reserved" data-spot="12">
+                            <span class="spot-number">12</span>
+                            <span class="spot-price">бронь</span>
+                        </div>
+                        <div class="parking-spot sold" data-spot="13">
+                            <span class="spot-number">13</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot sold" data-spot="14">
+                            <span class="spot-number">14</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot available" data-spot="15" data-price="350000">
+                            <span class="spot-number">15</span>
+                            <span class="spot-price">350 т.р.</span>
+                        </div>
+                    </div>
+
+                    <div class="parking-row">
+                        <div class="parking-spot sold" data-spot="16">
+                            <span class="spot-number">16</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot available" data-spot="17" data-price="350000">
+                            <span class="spot-number">17</span>
+                            <span class="spot-price">350 т.р.</span>
+                        </div>
+                        <div class="parking-spot sold" data-spot="18">
+                            <span class="spot-number">18</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot sold" data-spot="19">
+                            <span class="spot-number">19</span>
+                            <span class="spot-price">продано</span>
+                        </div>
+                        <div class="parking-spot reserved" data-spot="20">
+                            <span class="spot-number">20</span>
+                            <span class="spot-price">бронь</span>
+                        </div>
+                    </div>
+
+                    <div class="parking-area-label">Большая парковка (15 мест)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как купить</h2>
+            <p class="section-subtitle">Простой процесс оформления в собственность</p>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Выберите место</h3>
+                    <p>Посмотрите схему парковки и выберите удобное расположение</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Оставьте заявку</h3>
+                    <p>Позвоните или заполните форму на сайте для бронирования</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Подпишите договор</h3>
+                    <p>Встречаемся, подписываем договор купли-продажи</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Получите свидетельство</h3>
+                    <p>Регистрация в Росреестре и получение права собственности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="documents">
+        <div class="container">
+            <h2 class="section-title">Документы</h2>
+            <p class="section-subtitle">Все участки оформлены официально</p>
+
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <h4>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#16a34a"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+                        Участки у входа
+                    </h4>
+                    <p>Кадастровые номера: 74:36:0712001:4048-52, 74:36:0712001:62</p>
+                    <a href="https://pkk.rosreestr.ru/#/search/74:36:0712001:4048" target="_blank" class="cadastral-link">Проверить на Росреестре</a>
+                </div>
+
+                <div class="doc-card">
+                    <h4>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="#16a34a"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+                        Большая парковка
+                    </h4>
+                    <p>Кадастровый номер: 74:36:0000000:54976</p>
+                    <a href="https://pkk.rosreestr.ru/#/search/74:36:0000000:54976" target="_blank" class="cadastral-link">Проверить на Росреестре</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Можно ли продать парковочное место?</div>
+                    <div class="faq-answer">Да, вы получаете полное право собственности. Можете продать, подарить, передать по наследству или сдать в аренду.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Какие налоги нужно платить?</div>
+                    <div class="faq-answer">Земельный налог на парковочное место составляет 300-500 рублей в год. При продаже, если владели более 5 лет, налог не платится.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Как быстро оформляется сделка?</div>
+                    <div class="faq-answer">От момента подписания договора до получения выписки из ЕГРН обычно проходит 7-10 рабочих дней.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Можно ли купить в ипотеку?</div>
+                    <div class="faq-answer">Земельные участки под парковку не ипотечный продукт. Оплата полная или рассрочка до 6 месяцев.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Есть ли долгосрочная аренда?</div>
+                    <div class="faq-answer">Да, можно арендовать место на срок от 1 года. Стоимость аренды 3 000-5 000 руб/мес в зависимости от расположения.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Забронировать место</h2>
+            <p class="section-subtitle">Оставьте заявку или позвоните напрямую</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        <a href="tel:+79227007667">+7 922 700-76-67</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.503 3.936 1.386 5.614L0 24l6.671-1.351C8.307 23.511 10.103 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.819 0-3.545-.462-5.049-1.275l-.362-.196-3.761.762.799-3.662-.221-.378C2.465 15.604 2 13.845 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                        <a href="https://wa.me/79227007667" target="_blank">WhatsApp</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>Челябинск, ул. Полянка, 12</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label>Ваше имя</label>
+                        <input type="text" name="name" required placeholder="Как к вам обращаться?">
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <div class="form-group">
+                        <label>Номер места (если выбрали)</label>
+                        <select name="spot" id="spot-select">
+                            <option value="">Еще не выбрал</option>
+                            <option value="3">Место 3 (380 000 руб.)</option>
+                            <option value="4">Место 4 (380 000 руб.)</option>
+                            <option value="9">Место 9 (350 000 руб.)</option>
+                            <option value="10">Место 10 (350 000 руб.)</option>
+                            <option value="11">Место 11 (350 000 руб.)</option>
+                            <option value="15">Место 15 (350 000 руб.)</option>
+                            <option value="17">Место 17 (350 000 руб.)</option>
+                            <option value="rent">Хочу арендовать</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ООО "Хозяин" | ИНН 7447205515</p>
+            <p>Челябинск, пр-кт Победы, 160</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="spot-modal">
+        <div class="modal-content">
+            <h3>Место <span id="modal-spot-number"></span></h3>
+            <p>Стоимость: <strong id="modal-price"></strong></p>
+            <p>Для бронирования позвоните или заполните форму ниже.</p>
+            <button class="modal-close" onclick="closeModal()">Понятно</button>
+        </div>
+    </div>
+
+    <script>
+        // Parking spot click handler
+        document.querySelectorAll('.parking-spot.available').forEach(spot => {
+            spot.addEventListener('click', function() {
+                const spotNumber = this.dataset.spot;
+                const price = parseInt(this.dataset.price).toLocaleString('ru-RU');
+
+                document.getElementById('modal-spot-number').textContent = spotNumber;
+                document.getElementById('modal-price').textContent = price + ' руб.';
+                document.getElementById('spot-modal').classList.add('active');
+
+                // Pre-select in form
+                document.getElementById('spot-select').value = spotNumber;
+            });
+        });
+
+        function closeModal() {
+            document.getElementById('spot-modal').classList.remove('active');
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Close modal on outside click
+        document.getElementById('spot-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                phone: formData.get('phone'),
+                spot: formData.get('spot')
+            };
+
+            // Send to Bitrix24 webhook or other endpoint
+            fetch('https://rboffice.bitrix24.ru/rest/1/fv0145gurgpgnl57/crm.lead.add', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    fields: {
+                        TITLE: 'Парковка Полянка 12 - Место ' + (data.spot || 'не выбрано'),
+                        NAME: data.name,
+                        PHONE: [{ VALUE: data.phone, VALUE_TYPE: 'WORK' }],
+                        SOURCE_ID: 'WEB',
+                        COMMENTS: 'Место: ' + (data.spot || 'не выбрано')
+                    }
+                })
+            }).then(() => {
+                alert('Заявка отправлена! Мы перезвоним в течение часа.');
+                this.reset();
+            }).catch(() => {
+                alert('Произошла ошибка. Позвоните нам: +7 922 700-76-67');
+            });
+        });
+
+        // Phone mask
+        const phoneInput = document.querySelector('input[name="phone"]');
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value[0] === '8') value = '7' + value.slice(1);
+                if (value[0] !== '7') value = '7' + value;
+
+                let formatted = '+7';
+                if (value.length > 1) formatted += ' (' + value.slice(1, 4);
+                if (value.length > 4) formatted += ') ' + value.slice(4, 7);
+                if (value.length > 7) formatted += '-' + value.slice(7, 9);
+                if (value.length > 9) formatted += '-' + value.slice(9, 11);
+
+                e.target.value = formatted;
+            }
+        });
+    </script>
+</body>
+</html>
